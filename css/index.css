@@ -1,3 +1,279 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Apr 2, 2019: MY CODE STARTS BELOW... */
+
+.container {
+    /* width: 900px; */
+    width: 100%;
+	margin: auto;
+}
+
+header nav {
+    display:flex;
+    flex-direction: row;
+	margin-top: 40px;
+	justify-content: space-around;
+	align-items: center;
+	/* padding: 0px 10px 0px 10px; */
+}
 
 
+
+header .logo {
+	/* margin-left: 130px; */
+}
+
+header nav a {
+	margin: 0 20px;
+	padding-left: 16px;
+	color: LightGrey;
+	text-decoration: none;
+}
+.cta {
+    display: flex;
+}
+
+.cta div {
+	box-sizing: border-box;
+	width: 400px;
+}
+.cta img {
+	width: 425px;
+	margin-left: 70px;
+    padding-top: 100px;
+	
+}
+
+.cta-box{
+	padding-bottom: 60px;
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.cta h1 {
+
+    font-size: 70px;
+    text-align: center;
+	
+}
+
+.cta-box a {
+	color: black;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 5px 10px;
+}
+
+/* .cta a {
+	border: 1px solid black;
+    padding: 7px 37px 7px 33px;
+    text-decoration: none;
+    color: black;
+	margin-left: 177px;
+
+} */
+
+/* h1 button {
+	display: block;
+} */
+
+hr {
+	width: 876px;
+	margin-right: 20px;
+	/* margin-top: 70px; */
+	margin-bottom: 30px;
+}
+
+.main-content {
+	margin: 20px 1%;
+	display: inline-block;
+	width: 45%;
+	border: 3px solid black;
+	vertical-align: top;
+}
+
+.top-main-content {
+	margin: 20px 0;
+	display: flex;
+	width: 900px;
+}
+
+.top-main-content .features {
+	width: 450px;
+}
+
+.top-main-content .about {
+	width: 400px;
+}
+
+.middle-main-content {
+	margin: 40px 0px;
+	display: flex;
+	width: 900px;
+}
+
+.middle-main-content .services {
+	width: 288px;
+}
+
+.middle-main-content .product {
+	width: 288px;
+}
+
+.middle-main-content .vision {
+	width: 288px;
+}
+
+
+.main-content img {
+	margin: 0px 40px 0px 40px;
+}
+
+#bottomLine {
+	margin-top: 14px;
+    margin-bottom: 40px;
+}
+
+.contact {
+	padding-left: 20px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 80px;
+}
+
+/* tablet.css */
+
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+
+    img.logo {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    img.disappear {
+        display: none;
+    }
+
+    .cta-box{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 35%;
+    }
+
+    hr {
+        width: 876px;
+        margin-right: 20px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .top-main-content {
+        width: 100%;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+    
+    .middle-main-content {
+        width: 100%;
+    }
+}
+
+
+/* MOBILE MEDIA QUERY */
+
+/* @media (max-width: 500px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column-reverse;
+
+
+} */
